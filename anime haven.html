@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333; }
+header { background:#ba04da; color:white; padding:20px; text-align:center; }
+nav { background:#222; display:flex; justify-content:center; }
+nav a { color:white; padding:14px 20px; text-decoration:none; }
+nav a:hover { background:#b30000; }
+section { padding:40px; }
+h2 { color:#b30000; }
+.products { display:flex; gap:20px; flex-wrap:wrap; }
+.product { border:1px solid #ccc; padding:10px; width:220px; text-align:center; }
+.product img { width:180px; height:auto; }
+.product button { background:#b30000; color:white; border:none; padding:10px; cursor:pointer; margin-top:10px; }
+.product button:hover { background:#800000; }
+#cart, #checkout { border:1px solid #ccc; padding:20px; margin-top:20px; }
+footer { background:#222; color:white; text-align:center; padding:20px; margin-top:40px; }
+form input, form textarea { width:100%; padding:10px; margin:10px 0; }
+form button { background:#b30000; color:white; border:none; padding:10px 20px; cursor:pointer; }
+form button:hover { background:#800000; }
+#confirmation { color:green; font-weight:bold; margin-top:10px; }
+
+
+let cart = [];
+let total = 0;
+
+function addToCart(item, price) {
+  cart.push({item, price});
+  total += price;
+  updateCart();
+}
+
+function updateCart() {
+  const cartItems = document.getElementById('cart-items');
+  cartItems.innerHTML = '';
+  cart.forEach(c => {
+    const li = document.createElement('li');
+    li.textContent = `${c.item} - R${c.price}`;
+    cartItems.appendChild(li);
+  });
+  document.getElementById('cart-total').textContent = total;
+}
+
+function showCheckout() {
+  document.getElementById('checkout').style.display = 'block';
+}
+
+function submitOrder(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const address = document.getElementById('address').value;
+  document.getElementById('confirmation').textContent =
+    `Thank you, ${name}! Your order totaling R${total} will be shipped to ${address}. A confirmation email will be sent to ${email}.`;
+  cart = [];
+  total = 0;
+  updateCart();
+}
+
+
+
+
+
+</style>
+
+
+<header>
+  <h1>Anime Haven</h1>
+  <p>Your gateway to anime figurines, manga, and posters</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#community">Community</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Founded in 2026, Anime Haven is dedicated to bringing Japanese pop culture closer to fans in South Africa. 
+     We specialise in authentic anime figurines, manga volumes, and posters. Our mission is to create a haven 
+     for anime lovers and foster a vibrant community.</p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+    <div class="product">
+      <img src="figurine.jpg" alt="Anime Figurine">
+      <h3>Anime Figurine</h3>
+      <p>R450</p>
+      <button onclick="addToCart('Anime Figurine', 450)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="manga.jpg" alt="Manga">
+      <h3>Manga Volume</h3>
+      <p>R120</p>
+      <button onclick="addToCart('Manga Volume', 120)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="poster.jpg" alt="Poster">
+      <h3>Anime Poster</h3>
+      <p>R80</p>
+      <button onclick="addToCart('Anime Poster', 80)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: R<span id="cart-total">0</span></strong></p>
+    <button onclick="showCheckout()">Proceed to Checkout</button>
+  </div>
+
+  <div id="checkout" style="display:none;">
+    <h3>Checkout</h3>
+    <form onsubmit="submitOrder(event)">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="text" id="address" placeholder="Shipping Address" required>
+      <button type="submit">Place Order</button>
+    </form>
+    <p id="confirmation"></p>
+  </div>
+</section>
+
+<section id="community">
+  <h2>Community</h2>
+  <p>Join our blog and newsletter to stay updated on new releases, reviews, and upcoming events. 
+     Share your thoughts and connect with fellow anime fans.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Anime Haven | Cape Town, South Africa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
