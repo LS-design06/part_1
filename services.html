@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Anime Haven services and products, including anime figurines, manga volumes, collector posters, special orders and customer support.">
+  <meta name="keywords" content="anime figurines South Africa, manga volumes, collector posters, anime merchandise, special order anime">
+  <meta name="author" content="WEDE5020 Student">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="services.html">
+  <link rel="icon" href="images/-- figure Naruto_.jpg.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Services | Anime Haven Anime Store</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header and primary navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Anime Haven home">
+        <span>Anime</span><span>Haven</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page heading -->
+    <section class="page-hero container" aria-labelledby="services-title">
+      <p class="section-kicker">Products and services</p>
+      <h1 id="services-title">Browse anime products and support services.</h1>
+      <p>Search the catalogue, filter by category and use the enquiry form when you need pricing, availability or a special order.</p>
+    </section>
+
+    <!-- Search and dynamic catalogue -->
+    <section class="section container" aria-labelledby="catalogue-title">
+      <p class="section-kicker">Dynamic catalogue</p>
+      <h2 id="catalogue-title">Find products quickly.</h2>
+      <form class="catalogue-controls" role="search" aria-label="Product search and filter">
+        <label for="service-search">Search products</label>
+        <input id="service-search" type="search" placeholder="Search figurines, manga or posters">
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+          <option value="figurines">Figurines</option>
+          <option value="manga">Manga</option>
+          <option value="posters">Posters</option>
+          <option value="support">Support</option>
+        </select>
+        <button class="btn btn-secondary" type="button" id="reset-filters">Reset filters</button>
+      </form>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="product-grid" id="service-grid" aria-live="polite"></div>
+      <noscript>
+        <p class="notice">JavaScript is disabled. Enable JavaScript to use the searchable product catalogue.</p>
+      </noscript>
+    </section>
+
+    <!-- Tabs section -->
+    <section class="section container" aria-labelledby="process-title">
+      <p class="section-kicker">Ordering process</p>
+      <h2 id="process-title">Choose the support path that fits your request.</h2>
+      <div class="tabs" data-tabs>
+        <div class="tab-list" role="tablist" aria-label="Ordering support options">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="tab-browse" id="tab-button-browse">Browse catalogue</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-special" id="tab-button-special">Special order</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="tab-support" id="tab-button-support">Customer support</button>
+        </div>
+        <div class="tab-panel active" id="tab-browse" role="tabpanel" aria-labelledby="tab-button-browse">
+          <p>Use the searchable catalogue to compare product types, starting prices and availability notes.</p>
+        </div>
+        <div class="tab-panel" id="tab-special" role="tabpanel" aria-labelledby="tab-button-special" hidden>
+          <p>Submit an enquiry when you are looking for a specific series, character, scale or limited-edition release.</p>
+        </div>
+        <div class="tab-panel" id="tab-support" role="tabpanel" aria-labelledby="tab-button-support" hidden>
+          <p>Contact the team for order updates, product care advice or general customer support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service details -->
+    <section class="section container" aria-labelledby="details-title">
+      <p class="section-kicker">Service details</p>
+      <h2 id="details-title">Clear product categories for every fan.</h2>
+      <div class="service-detail-grid">
+        <article id="figurines" class="service-detail">
+          <h3>Anime figurines</h3>
+          <p>Detailed collectible figures are grouped by series, character and scale. Product descriptions include condition, approximate size and enquiry notes.</p>
+          <a href="enquiry.html">Enquire about a figurine</a>
+        </article>
+        <article id="manga" class="service-detail">
+          <h3>Manga volumes</h3>
+          <p>Manga requests can include genre, volume number, language preference and whether the customer needs a full set or individual volumes.</p>
+          <a href="enquiry.html">Request manga availability</a>
+        </article>
+        <article id="posters" class="service-detail">
+          <h3>Collector posters</h3>
+          <p>Posters are available in standard and collector sizes. Customers can ask about specific scenes, characters or display materials.</p>
+          <a href="enquiry.html">Ask about posters</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section container" aria-labelledby="cta-title">
+      <h2 id="cta-title">Need help choosing?</h2>
+      <p>Send a product enquiry and receive a recommendation based on your budget, favourite series and preferred category.</p>
+      <a class="btn btn-primary" href="enquiry.html">Submit an enquiry</a>
+    </section>
+  </main>
+
+  <!-- Footer with internal links -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">Anime<span>Haven</span></a>
+        <p>Authentic anime merchandise for South African collectors, readers and fans.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <strong>Region:</strong> South Africa<br>
+        <strong>Phone:</strong> 066 085 4745<br>
+        <strong>Email:</strong> animehaven@gmail.com
+      </address>
+    </div>
+    <p class="copyright">&copy; 2026 Anime Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
+

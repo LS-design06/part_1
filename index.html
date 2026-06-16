@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anime Haven is a South African anime retail store offering authentic figurines, manga volumes, collector posters, product enquiries and contact support.">
+  <meta name="keywords" content="anime store South Africa, anime figurines, manga volumes, collector posters, Japanese pop culture merchandise">
+  <meta name="author" content="WEDE5020 Student">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="index.html">
+  <link rel="icon" href="images/-- figure Naruto_.jpg.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Anime Haven | South African Anime Store</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header and primary navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Anime Haven home">
+        <span>Anime</span><span>Haven</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero section -->
+    <section class="hero" id="home" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">South Africa's premier anime merchandise store</p>
+          <h1 id="home-title">Discover authentic anime collectibles online.</h1>
+          <p>Anime Haven helps South African fans find genuine figurines, manga volumes and collector posters with clear product information, fast enquiries and friendly support.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="services.html">View products</a>
+            <a class="btn btn-secondary" href="enquiry.html">Request a quote</a>
+          </div>
+          <dl class="hero-stats" aria-label="Store highlights">
+            <div>
+              <dt>500+</dt>
+              <dd>products available</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>core categories</dd>
+            </div>
+            <div>
+              <dt>24h</dt>
+              <dd>enquiry response target</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/-- figure Naruto_.jpg.jpeg" srcset="images/-- figure Naruto_.jpg.jpeg 1x, images/-- figure Naruto_.jpg.jpeg 2x" width="640" height="420" alt="Anime Haven product showcase featuring figurines and collectibles">
+          <figcaption>Anime Haven product showcase.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Featured product categories -->
+    <section class="section container" id="featured" aria-labelledby="featured-title">
+      <p class="section-kicker">Featured categories</p>
+      <h2 id="featured-title">Everything fans need in one store.</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="images/-- figure Naruto_.jpg.jpeg" srcset="images/-- figure Naruto_.jpg.jpeg 1x, images/-- figure Naruto_.jpg.jpeg 2x" width="320" height="220" alt="Anime figurine display shelf">
+          <h3>Authentic figurines</h3>
+          <p>Collectible figures sourced from recognised Japanese manufacturers.</p>
+          <a href="services.html#figurines">Explore figurines</a>
+        </article>
+        <article class="feature-card">
+          <img src="images/download (8).jpg.jpeg" srcset="images/download (8).jpg.jpeg 1x, images/download (8).jpg.jpeg 2x" width="320" height="220" alt="Manga volumes stacked on a shelf">
+          <h3>Curated manga</h3>
+          <p>Popular and niche manga volumes organised by genre and series.</p>
+          <a href="services.html#manga">Browse manga</a>
+        </article>
+        <article class="feature-card">
+          <img src="images/download (16).jpg.jpeg" srcset="images/download (16).jpg.jpeg 1x, images/download (16).jpg.jpeg 2x" width="320" height="220" alt="Collector anime posters and wall art display">
+          <h3>Collector posters</h3>
+          <p>High-quality wall art for bedrooms, study spaces and fan rooms.</p>
+          <a href="services.html#posters">See posters</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery with JavaScript lightbox -->
+    <section class="section container" id="gallery" aria-labelledby="gallery-title">
+      <p class="section-kicker">Gallery</p>
+      <h2 id="gallery-title">A closer look at the Anime Haven experience.</h2>
+      <div class="gallery-grid">
+        <button class="gallery-item" type="button" data-full="images/download (14).jpg.jpeg" data-title="Figurine display" data-caption="Figurine collection area at the store.">
+          <img src="images/download (14).jpg.jpeg" alt="Anime figurine collection display">
+        </button>
+        <button class="gallery-item" type="button" data-full="images/download (11).jpg.jpeg" data-title="Manga wall" data-caption="Manga browsing wall with collection.">
+          <img src="images/download (11).jpg.jpeg" alt="Manga volumes on display shelf">
+        </button>
+        <button class="gallery-item" type="button" data-full="images/download (10).jpg.jpeg" data-title="Poster station" data-caption="Collector poster display area.">
+          <img src="images/download (10).jpg.jpeg" alt="Collector anime posters on display">
+        </button>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close gallery preview">×</button>
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer with internal links -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">Anime<span>Haven</span></a>
+        <p>Authentic anime merchandise for South African collectors, readers and fans.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <strong>Region:</strong> South Africa<br>
+        <strong>Phone:</strong> 066 085 4745<br>
+        <strong>Email:</strong> animehaven@gmail.com
+      </address>
+    </div>
+    <p class="copyright">&copy; 2026 Anime Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>

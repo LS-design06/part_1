@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Anime Haven for customer support, order updates, product care advice and general questions about anime merchandise in South Africa.">
+  <meta name="keywords" content="contact Anime Haven, anime store support South Africa, anime merchandise customer service, manga and figurine support">
+  <meta name="author" content="WEDE5020 Student">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="contact.html">
+  <link rel="icon" href="images/-- figure Naruto_.jpg.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <title>Contact Anime Haven | Customer Support</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header and primary navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Anime Haven home">
+        <span>Anime</span><span>Haven</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page heading -->
+    <section class="page-hero container" aria-labelledby="contact-title">
+      <p class="section-kicker">Contact us</p>
+      <h1 id="contact-title">Contact Anime Haven for support and updates.</h1>
+      <p>Use the validated contact form to send a message. The page also includes an interactive map showing the South African service region.</p>
+    </section>
+
+    <!-- Contact details and map -->
+    <section class="section container contact-layout" aria-labelledby="contact-info-title">
+      <div>
+        <p class="section-kicker">Customer support</p>
+        <h2 id="contact-info-title">Reach the Anime Haven team.</h2>
+        <div class="contact-cards">
+          <article>
+            <h3>Phone</h3>
+            <p><a href="tel:+27660854745">066 085 4745</a></p>
+          </article>
+          <article>
+            <h3>Email</h3>
+            <p><a href="mailto:animehaven@gmail.com">animehaven@gmail.com</a></p>
+          </article>
+          <article>
+            <h3>Region</h3>
+            <p>South Africa</p>
+          </article>
+        </div>
+      </div>
+      <div>
+        <h2 class="map-heading">Interactive service map</h2>
+        <div id="map" class="map" role="img" aria-label="Interactive map of South Africa with Anime Haven service marker"></div>
+        <p id="map-fallback" class="notice" hidden>Map libraries could not load. The contact form remains available.</p>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="section container form-section" aria-labelledby="contact-form-title">
+      <p class="section-kicker">Message form</p>
+      <h2 id="contact-form-title">Send a general message.</h2>
+      <form id="contact-form" class="validated-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="contact-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="contact-name-error">
+            <p class="error-message" id="contact-name-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required aria-describedby="contact-email-error">
+            <p class="error-message" id="contact-email-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Phone number</label>
+            <input id="contact-phone" name="phone" type="tel" autocomplete="tel" pattern="^\+?[0-9\s-]{7,15}$" placeholder="+27 00 000 0000" aria-describedby="contact-phone-error">
+            <p class="error-message" id="contact-phone-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="message-type">Message type <span aria-hidden="true">*</span></label>
+            <select id="message-type" name="messageType" required aria-describedby="message-type-error">
+              <option value="">Select a message type</option>
+              <option>Order update</option>
+              <option>Product care</option>
+              <option>Website feedback</option>
+              <option>General question</option>
+            </select>
+            <p class="error-message" id="message-type-error" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Full message <span aria-hidden="true">*</span></label>
+          <textarea id="contact-message" name="message" required minlength="20" rows="6" aria-describedby="contact-message-error"></textarea>
+          <p class="error-message" id="contact-message-error" aria-live="polite"></p>
+        </div>
+        <div class="form-group checkbox-group">
+          <input id="contact-consent" name="consent" type="checkbox" required aria-describedby="contact-consent-error">
+          <label for="contact-consent">I agree to be contacted about this message. <span aria-hidden="true">*</span></label>
+          <p class="error-message" id="contact-consent-error" aria-live="polite"></p>
+        </div>
+        <button class="btn btn-primary" type="submit">Prepare message</button>
+        <p class="form-response" id="contact-response" role="status" aria-live="polite"></p>
+        <pre class="email-preview" id="email-preview" tabindex="0" hidden></pre>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer with internal links -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">Anime<span>Haven</span></a>
+        <p>Authentic anime merchandise for South African collectors, readers and fans.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <strong>Region:</strong> South Africa<br>
+        <strong>Phone:</strong> 066 085 4745<br>
+        <strong>Email:</strong> animehaven@gmail.com
+      </address>
+    </div>
+    <p class="copyright">&copy; 2026 Anime Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
+

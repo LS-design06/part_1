@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a product enquiry to Anime Haven for anime figurines, manga volumes, collector posters, special orders and availability checks.">
+  <meta name="keywords" content="anime product enquiry South Africa, anime figurine quote, manga availability, collector poster order">
+  <meta name="author" content="WEDE5020 Student">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="enquiry.html">
+  <link rel="icon" href="images/-- figure Naruto_.jpg.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Product Enquiry | Anime Haven</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header and primary navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Anime Haven home">
+        <span>Anime</span><span>Haven</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page heading -->
+    <section class="page-hero container" aria-labelledby="enquiry-title">
+      <p class="section-kicker">Product enquiry</p>
+      <h1 id="enquiry-title">Request product availability, pricing or a special order.</h1>
+      <p>Complete the validated enquiry form and Anime Haven will respond with a quote or recommendation within 24 hours.</p>
+    </section>
+
+    <!-- Enquiry form -->
+    <section class="section container form-section" aria-labelledby="form-title">
+      <p class="section-kicker">Enquiry form</p>
+      <h2 id="form-title">Tell us what you need.</h2>
+      <form id="enquiry-form" class="validated-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="enquiry-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="enquiry-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="enquiry-name-error">
+            <p class="error-message" id="enquiry-name-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-email">Email address <span aria-hidden="true">*</span></label>
+            <input id="enquiry-email" name="email" type="email" autocomplete="email" required aria-describedby="enquiry-email-error">
+            <p class="error-message" id="enquiry-email-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-phone">Phone number</label>
+            <input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="^\+?[0-9\s-]{7,15}$" placeholder="+27 00 000 0000" aria-describedby="enquiry-phone-error">
+            <p class="error-message" id="enquiry-phone-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-type">Enquiry type <span aria-hidden="true">*</span></label>
+            <select id="enquiry-type" name="enquiryType" required aria-describedby="enquiry-type-error">
+              <option value="">Select an enquiry type</option>
+              <option>Product availability</option>
+              <option>Price quote</option>
+              <option>Special order</option>
+              <option>Delivery question</option>
+            </select>
+            <p class="error-message" id="enquiry-type-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-interest">Product interest <span aria-hidden="true">*</span></label>
+            <select id="enquiry-interest" name="productInterest" required aria-describedby="enquiry-interest-error">
+              <option value="">Select a product category</option>
+              <option>Figurines</option>
+              <option>Manga volumes</option>
+              <option>Collector posters</option>
+              <option>Mixed order</option>
+            </select>
+            <p class="error-message" id="enquiry-interest-error" aria-live="polite"></p>
+          </div>
+          <div class="form-group">
+            <label for="enquiry-date">Preferred response date <span aria-hidden="true">*</span></label>
+            <input id="enquiry-date" name="preferredDate" type="date" required aria-describedby="enquiry-date-error">
+            <p class="error-message" id="enquiry-date-error" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="enquiry-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="enquiry-message" name="message" required minlength="20" rows="6" placeholder="Include series, character, volume number, scale or poster size." aria-describedby="enquiry-message-error"></textarea>
+          <p class="error-message" id="enquiry-message-error" aria-live="polite"></p>
+        </div>
+        <div class="form-group checkbox-group">
+          <input id="enquiry-consent" name="consent" type="checkbox" required aria-describedby="enquiry-consent-error">
+          <label for="enquiry-consent">I agree to be contacted about this enquiry. <span aria-hidden="true">*</span></label>
+          <p class="error-message" id="enquiry-consent-error" aria-live="polite"></p>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit enquiry</button>
+        <p class="form-response" id="enquiry-response" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer with internal links -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">Anime<span>Haven</span></a>
+        <p>Authentic anime merchandise for South African collectors, readers and fans.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Quick links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <strong>Region:</strong> South Africa<br>
+        <strong>Phone:</strong> 066 085 4745<br>
+        <strong>Email:</strong> animehaven@gmail.com
+      </address>
+    </div>
+    <p class="copyright">&copy; 2026 Anime Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
