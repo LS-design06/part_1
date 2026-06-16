@@ -1,68 +1,43 @@
-Organisation Overview
-Name: Anime Haven
+Proposal 1: Anime Haven Retail Store
 
-Founded: 2026
+ Current Analysis
 
-Focus: Premium anime figurines, manga, and posters for South African fans.
+The target business, Anime Haven, tries to fill the lack of anime merchandise retailers in South Africa. In its current state, one needs to use several foreign stores that ship for weeks or use local websites with little to no authentic anime items available. As a result, the proposed business will serve as an online store specializing in three key categories – figurines, manga books, and poster collectors.
 
-Mission: Provide authentic merchandise and build a community around Japanese art and storytelling.
+ Key Features
 
-Vision: Become South Africa’s leading anime retailer, known for excellence and engagement.
+- Searchable catalog and filters by product categories
+- Product inquiry tool and ability to generate quotes
+- Gallery of merchandise
+- Customer support contact
+- Mobile hamburger navigation
+- Interactive map with coverage zone
 
-Target Audience: Anime enthusiasts aged 15–35.
-Website Goals
-Build strong online presence to boost visibility and sales.
+ Design Philosophy
 
-Deliver smooth shopping experience for posters, manga, and figurines.
+Dark UI with anime-themed red accent color (#c0162a). Readable font combination includes Arial and Helvetica for body text and Georgia serif for header typography. Card-like page layout with subtle hover animations for enhanced UX.
 
-Foster community with blogs, reviews, newsletters, and events.
+Technologies
 
-KPIs: Monthly visits, conversion rates, customer feedback.
-
-Features & Functionality
-Homepage: Hero banner, promotions, product highlights.
-
-About Us: Company background and mission.
-
-Products Page: Categorized listings with prices, descriptions, and images.
-
-Contact Page: Customer service form.
-
-Community Section: Blog posts, reviews, event announcements.
-
-Interactive Tools: Search bar, shopping cart, secure checkout.
-Design & UX
-Colors: Deep red, black, white.
-
-Typography: Modern sans serif fonts.
-
-Layout: Grid-based, mobile-friendly, easy navigation.
-
-Style: Professional yet energetic, reflecting anime culture.
-
- Technical Specs
-Tech Stack: HTML, CSS, JavaScript.
-
-Hosting: GitHub Pages.
-
-Domain: .co.za for local relevance.
+- HTML5 with semantic elements
+- CSS3 with Flexbox/Grid and custom variables
+- Vanilla JavaScript for functionality
+- Leaflet.js library for interactive maps
+- Netlify website deployment
 
 Timeline
-Weeks 1–2: Planning & research.
 
-Weeks 3–4: Content integration & HTML structure.
+- Weeks 1 & 2: Planning & Proposals
+- Weeks 3 & 4: HTML Structure & Semantic Markup
+- Weeks 5 & 6: Responsive CSS Styling
+- Weeks 7 & 8: JavaScript Interactivity
+- Week 9: Testing & Deployment
+- Week 10: Documentation & Submission
 
-Weeks 5–6: Responsive design & CSS styling.
+ Budget
 
-Weeks 7–8: SEO optimization & JavaScript functionality.
-
-Week 9: Deployment & testing.
-
-Budget
-Domain, hosting, maintenance: R3,000 – R5,000.
-
-Development handled internally to reduce costs.
-
-
-
-
+- Domain: R150/year
+- Hosting: R0 (Netlify)
+- Image Assets: R0 (Legally Sourced/Generated)
+- Development Time: 100 hours
+- 
